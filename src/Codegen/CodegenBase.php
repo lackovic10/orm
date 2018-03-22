@@ -165,6 +165,11 @@ abstract class CodegenBase extends ObjectBase
      */
     protected static $DirectoriesToExcludeArray = array('.', '..', '.svn', 'svn', 'cvs', '.git');
 
+    public function __construct()
+    {
+        self::$TemplatePaths = [dirname(__FILE__).'/../../codegen/templates/'];
+    }
+
     /**
      * Returns prefix for variable according to variable type
      *
