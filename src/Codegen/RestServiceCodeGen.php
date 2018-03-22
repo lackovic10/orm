@@ -10,7 +10,7 @@
 namespace QCubed\Codegen;
 
 use QCubed\Exception\Caller;
-use QCubed\Project\Codegen\CodegenBase as QCodegen;
+use QCubed\Codegen\CodegenBase as QCodegen;
 
 /**
  * RestServiceCodegen

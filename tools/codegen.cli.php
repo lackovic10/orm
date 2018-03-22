@@ -1,6 +1,6 @@
 <?php
 
-use QCubed\Project\Codegen\CodegenBase as Codegen;
+use QCubed\Codegen\CodegenBase as Codegen;
 
 /* This includes library file is used by the codegen.cli and codegen.phpexe scripts
  * to simply fire up and run the CodeGen object, itself.
@@ -14,7 +14,7 @@ $strQCubedPath = dirname($strOrmPath);
 
 function PrintInstructions() {
 		global $strCommandName;
-		print('QCubed Code Generator (Command Line Interface) 
+		print('QCubed Code Generator (Command Line Interface)
 Copyright (c) 2001 - 2009, QuasIdea Development, LLC, QCubed Project
 This program is free software with ABSOLUTELY NO WARRANTY; you may
 redistribute it under the terms of The MIT License.

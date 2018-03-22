@@ -39,7 +39,7 @@ use QCubed\Query\ModelTrait;
  * overriding existing or implementing new methods, properties and variables
  * in the <?= $objTable->ClassName ?> class.
  *
- * @package <?= \QCubed\Project\Codegen\CodegenBase::$ApplicationName; ?>
+ * @package <?= \QCubed\Codegen\CodegenBase::$ApplicationName; ?>
 
  * @subpackage ModelGen
 <?php include("property_comments.tpl.php"); ?>

@@ -20,7 +20,7 @@
 	 * class, which contains all the basic CRUD-type functionality as well as
 	 * basic methods to handle relationships and index-based loading.
 	 *
-	 * @package <?= \QCubed\Project\Codegen\CodegenBase::$ApplicationName; ?>
+	 * @package <?= \QCubed\Codegen\CodegenBase::$ApplicationName; ?>
 
 	 * @subpackage Model
 	 *

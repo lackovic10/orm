@@ -12,7 +12,7 @@ namespace QCubed\Codegen;
 use QCubed\Database;
 use QCubed\Exception\Caller;
 use QCubed\Type;
-use QCubed\Project\Codegen\CodegenBase as QCodegen;
+use QCubed\Codegen\CodegenBase as QCodegen;
 
 //require_once QCUBED_PROJECT_DIR . '/qcubed/codegen/CodegenBase.php';
 
