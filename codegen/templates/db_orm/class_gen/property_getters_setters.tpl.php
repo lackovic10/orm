@@ -89,7 +89,7 @@
             return $this; // allows chaining
         }
 <?php } ?>
-		$<?= $objColumn->VariableName ?> = Type::Cast($<?= $objColumn->VariableName ?>, <?= $objColumn->VariableTypeAsConstant ?>);
+		$<?= $objColumn->VariableName ?> = Type::cast($<?= $objColumn->VariableName ?>, <?= $objColumn->VariableTypeAsConstant ?>);
 
 		if ($this-><?= $objColumn->VariableName ?> !== $<?= $objColumn->VariableName ?>) {
 <?php if (($objColumn->Reference) && (!$objColumn->Reference->IsType)) { ?>
@@ -116,7 +116,7 @@
         if (is_null($<?= $objColumn->Reference->VariableName ?>)) {
             $this->set<?= $objColumn->PropertyName ?>(null);
         } else {
-            $<?= $objColumn->Reference->VariableName ?> = Type::Cast($<?= $objColumn->Reference->VariableName ?>, '<?= $objColumn->Reference->VariableType ?>');
+            $<?= $objColumn->Reference->VariableName ?> = Type::cast($<?= $objColumn->Reference->VariableName ?>, '<?= $objColumn->Reference->VariableType ?>');
 
             // Make sure its a SAVED <?= $objColumn->Reference->VariableType ?> object
             if (is_null($<?= $objColumn->Reference->VariableName ?>-><?= $objCodeGen->TableArray[strtolower($objColumn->Reference->Table)]->ColumnArray[strtolower($objColumn->Reference->Column)]->PropertyName ?>)) {
@@ -177,7 +177,7 @@ foreach ($objTable->ReverseReferenceArray as $objReverseReference) {
             // Make sure we update the adjoined <?= $objReverseReference->VariableType ?> object the next time we call Save()
             $this->blnDirty<?= $objReverseReference->ObjectPropertyName ?> = true;
         } else {
-            $<?= $objReverseReference->ObjectMemberVariable ?> = \QCubed\Type::Cast($<?= $objReverseReference->ObjectMemberVariable ?>, '<?= $objReverseReference->VariableType ?>');
+            $<?= $objReverseReference->ObjectMemberVariable ?> = \QCubed\Type::cast($<?= $objReverseReference->ObjectMemberVariable ?>, '<?= $objReverseReference->VariableType ?>');
 
             // Are we setting <?= $objReverseReference->ObjectMemberVariable ?> to a DIFFERENT $<?= $objReverseReference->ObjectMemberVariable ?>?
             if ((!$this-><?= $objReverseReference->ObjectPropertyName ?>) || ($this-><?= $objReverseReference->ObjectPropertyName ?>-><?= $objCodeGen->GetTable($objReverseReference->Table)->PrimaryKeyColumnArray[0]->PropertyName ?> != $<?= $objReverseReference->ObjectMemberVariable ?>-><?= $objCodeGen->GetTable($objReverseReference->Table)->PrimaryKeyColumnArray[0]->PropertyName ?>)) {

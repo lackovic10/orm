@@ -23,7 +23,7 @@
 			switch ($strName) {
 				case 'SomeNewProperty':
 					try {
-						return ($this->strSomeNewProperty = \QCubed\Type::Cast($mixValue, \QCubed\Type::String));
+						return ($this->strSomeNewProperty = \QCubed\Type::cast($mixValue, \QCubed\Type::String));
 					} catch (QInvalidCastException $objExc) {
 						$objExc->incrementOffset();
 						throw $objExc;
