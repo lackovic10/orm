@@ -10,7 +10,9 @@
 	);
 ?>
 <?php print("<?php\n"); ?>
-	require(QCUBED_PROJECT_MODEL_GEN_DIR . '/<?= $objTable->ClassName ?>Gen.php');
+	namespace <?php echo QCUBED_PROJECT_MODEL_NAMESPACE; ?>;
+
+	use <?php echo QCUBED_PROJECT_MODEL_GEN_NAMESPACE; ?>;
 
 	/**
 	 * The <?= $objTable->ClassName ?> class defined here contains any

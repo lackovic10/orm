@@ -14,6 +14,9 @@
  * Generated <?= $objTable->ClassName ?> base class file
  */
 
+namespace <?php echo QCUBED_PROJECT_MODEL_GEN_NAMESPACE; ?>;
+
+use <?php echo QCUBED_PROJECT_MODEL_NAMESPACE; ?>;
 use QCubed\Query\QQ;
 use QCubed\Query\Condition\ConditionInterface as iCondition;
 use QCubed\Query\Clause\ClauseInterface as iClause;
