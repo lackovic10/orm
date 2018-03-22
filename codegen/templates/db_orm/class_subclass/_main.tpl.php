@@ -12,7 +12,7 @@
 <?php print("<?php\n"); ?>
 	namespace <?php echo QCUBED_PROJECT_MODEL_NAMESPACE; ?>;
 
-	use <?php echo QCUBED_PROJECT_MODEL_GEN_NAMESPACE; ?>;
+	use <?php echo QCUBED_PROJECT_MODEL_GEN_NAMESPACE; ?>\<?php echo $objTable->ClassName; ?>Gen;
 
 	/**
 	 * The <?= $objTable->ClassName ?> class defined here contains any
