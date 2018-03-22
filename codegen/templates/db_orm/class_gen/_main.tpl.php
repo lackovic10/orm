@@ -22,6 +22,8 @@ use QCubed\Exception\Caller;
 use QCubed\Type;
 use QCubed\QDateTime;
 use QCubed\Query\ModelTrait;
+use IteratorAggregate;
+use JsonSerializable;
 
 /**
  * Class <?= $objTable->ClassName ?>Gen
