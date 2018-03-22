@@ -6,7 +6,7 @@
      * Static method to retrieve the Database object that owns this class.
      * @return \QCubed\Database\DatabaseBase reference to the Database object that can query this class
      */
-    public static function getDatabase()
+    public static function getDatabase(): \QCubed\Database\DatabaseBase
     {
         return \QCubed\Database\Service::getDatabase(self::getDatabaseIndex());
     }
