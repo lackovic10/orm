@@ -460,9 +460,7 @@ abstract class CodegenBase extends ObjectBase
                 ) {
                     $objModuleDirectory = opendir($strTemplateFilePath . $strModuleName);
                     while ($strFilename = readdir($objModuleDirectory)) {
-                        if ((QString::firstCharacter($strFilename) == '_') &&
-                            (substr($strFilename, strlen($strFilename) - 8) == '.tpl.php')
-                        ) {
+                        if (QString::firstCharacter($strFilename) == '_') {
                             $strTemplateArray[$strModuleName][$strFilename] = $strTemplateFilePath . $strModuleName . '/' . $strFilename;
                         }
                     }

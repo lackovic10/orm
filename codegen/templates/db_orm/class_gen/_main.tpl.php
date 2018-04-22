@@ -131,6 +131,3 @@ abstract class <?= $objTable->ClassName ?>Gen extends \QCubed\ObjectBase impleme
 
 }
 
-
-
-<?php include("qcubed_query_classes.tpl.php"); ?>
