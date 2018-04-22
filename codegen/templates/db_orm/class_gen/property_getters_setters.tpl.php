@@ -116,7 +116,7 @@
         if (is_null($<?= $objColumn->Reference->VariableName ?>)) {
             $this->set<?= $objColumn->PropertyName ?>(null);
         } else {
-            $<?= $objColumn->Reference->VariableName ?> = Type::cast($<?= $objColumn->Reference->VariableName ?>, '<?= $objColumn->Reference->VariableType ?>');
+            $<?= $objColumn->Reference->VariableName ?> = Type::cast($<?= $objColumn->Reference->VariableName ?>, '<?= QCUBED_PROJECT_MODEL_NAMESPACE .'\\'.$objColumn->Reference->VariableType ?>');
 
             // Make sure its a SAVED <?= $objColumn->Reference->VariableType ?> object
             if (is_null($<?= $objColumn->Reference->VariableName ?>-><?= $objCodeGen->TableArray[strtolower($objColumn->Reference->Table)]->ColumnArray[strtolower($objColumn->Reference->Column)]->PropertyName ?>)) {
